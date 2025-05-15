@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонвайб — Регистрация</title>
+    <meta name="description" content="Регистрация на сайте Фонвайб – создайте свой личный аккаунт и управляйте заказами.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--#include file="header.html"-->
+    
+    <main>
+        <form action="./php/register.php" method="POST" class="gray-container">
+            <h1 class="form-title">Регистрация</h1>
+            <a class="white-input" href="./login.html">Есть учётная запись? Войти</a>
+            <input class="white-input" name="email" type="email" placeholder="E-mail"></input>
+            <input class="white-input" name="name" type="text" placeholder="ФИО"></input>
+            <input class="white-input" name="tel" type="tel" placeholder="Телефон"></input>
+            <input class="white-input" name="password" type="password" placeholder="Пароль"></input>
+            <button type="submit" id="login-button">Зарегистрироваться</button>
+        </form>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-menu">© 2025 Фонвайб
+            <div><a class="footer-link" href="./about.html">О компании</a>
+                <span id="contact">Связаться: </span><span id="phone-number">8-800-37-07-899</span>
+            </div>
+            <a class="footer-link" id="btn-up" href="#">Наверх</a>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+</body>
+
+</html>

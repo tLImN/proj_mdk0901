@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонвайб — Вход</title>
+    <meta name="description" content="Вход на сайт Фонвайб. Получите доступ к вашему личному кабинету.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="order-header">
+        <div id="logo-with-catalog-button">
+            <a href="./index.html"><img src="./img/logo.svg" alt="Фонвайб" width="200px"></a>
+        </div>
+        <span class="order-info">Оформление 2 товаров за 84 598 ₽</span>
+    </div>
+
+    <main>
+        <div class="gray-container" id="order-container">
+            <h1 class="form-title">Войти</h1>
+            <a class="white-input" href="./login.html">Есть учётная запись? Войти</a>
+            <!-- <a class="white-input" href="#">Иванов Иван Иванович</a> -->
+            <h1 class="form-title">Способ получения</h1>
+            <div class="tabs">
+                <a class="tab-button" href="#"><b>Самовывоз</b></a>
+                <a class="tab-button-inactive" href="#">Доставка</a>
+            </div>
+            <input class="white-input" name="address" type="text" placeholder="Укажите адрес"></input>
+            <h1 class="form-title">Способ оплаты</h1>
+            <div class="tabs">
+                <a class="tab-button" href="#"><b>Онлайн</b></a>
+                <a class="tab-button-inactive" href="#">При получении</a>
+            </div>
+            <submit class="payment-button">Оплатить заказ</submit>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-menu">© 2025 Фонвайб
+            <div><a class="footer-link" href="./about.html">О компании</a>
+                <span id="contact">Связаться: </span><span id="phone-number">8-800-37-07-899</span>
+            </div>
+            <a class="footer-link" id="btn-up" href="#">Наверх</a>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+</body>
+
+</html>

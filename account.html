@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонвайб — Личный кабинет</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--#include file="header.html"-->
+
+    <main>
+        <div class="sections">
+            <h1>Личный кабинет</h1>
+            <div class="account-settings-page">
+                <h2>Информация об аккаунте</h2>
+                <div class="account-information-table">
+                    <div class="account-information-column">
+                        <span class="acc-info-col-upper-text">ФИО</span>
+                        <span><b><?php echo htmlspecialchars($user['name']); ?></b></span>
+                    </div>
+                    <div class="account-information-column">
+                        <span class="acc-info-col-upper-text">E-mail</span>
+                        <span><?php echo htmlspecialchars($user['email']); ?></span>
+                    </div>
+                    <div class="account-information-column">
+                        <span class="acc-info-col-upper-text">Телефон</span>
+                        <span><?php echo htmlspecialchars($user['phone']); ?></span>
+                    </div>
+                    <div class="account-information-column">
+                        <span class="acc-info-col-upper-text">Пароль</span>
+                        <a class="change-button" href="#">Изменить</a>
+                    </div>
+                    <div class="account-information-column">
+                        <span class="acc-info-col-upper-text">Управление аккаунтом</span>
+                        <a class="logout-button" href="logout.php" id="logout-btn">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-menu">© 2025 Фонвайб
+            <div><a class="footer-link" href="./about.html">О компании</a>
+                <span id="contact">Связаться: </span><span id="phone-number">8-800-37-07-899</span>
+            </div>
+            <a class="footer-link" id="btn-up" href="#">Наверх</a>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+</body>
+
+</html>

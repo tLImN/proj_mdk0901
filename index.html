@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонвайб — Главная</title>
+    <meta name="description" content="Интернет-магазин Фонвайб — широкий выбор смартфонов и аксессуаров к ним. 
+        Новинки, выгодные цены, удобный поиск по категориям и быстрая доставка.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--#include file="header.html"-->
+
+    <main>
+        <span id="address-bar">Каталог /</span>
+        <div class="sections">
+            <!-- CATEGORIES -->
+            <h1>Выберите категорию товара</h1>
+            <section id="categories">
+                <a href="./smartphones.html">
+                    <div class="block" id="category-block"><img src="./img/categories_smartphones.png"
+                            height="142px"><br><span class="category-name">Смартфоны</span></div>
+                </a>
+                <a href="#">
+                    <div class="block" id="category-block"><img src="./img/categories_headphones.png"
+                            height="142px"><br><span class="category-name">Наушники</span></div>
+                </a>
+                <a href="#">
+                    <div class="block" id="category-block"><img src="./img/categories_acessories.png"
+                            height="142px"><br><span class="category-name">Аксессуары</span></div>
+                </a>
+                <a href="#">
+                    <div class="block" id="category-block"><img src="./img/categories_charging.png"
+                            height="142px"><br><span class="category-name">Зарядка и подключение</span></div>
+                </a>
+            </section>
+
+            <!-- HISTORY -->
+            <h1>Вы недавно смотрели</h1>
+            <section class="product-cards-grid">
+                <div class="block" id="product-card">
+                    <img src="./img/products/smartphone_iphone-15-black.png" height="142px"><br>
+                    <a href="./product-page.html">
+                        <div class="product-name">6.1" Смартфон Apple iPhone 15 128 ГБ черный</div>
+                    </a>
+                    <div class="product-specifications">ядер - 6x(3.46 ГГц), 6 ГБ, 1 SIM, Super Retina XDR, 2556x1179,
+                        камера 48+12 Мп, NFC, 5G, GPS, 3349 мА*ч</div>
+                    <div class="card-buttons">
+                        <div class="price-block">68 599 ₽</div>
+                        <div class="add-to-cart-button"><a href="#"><img src="./img/icon_shopping-cart.svg"
+                                    alt="Добавить в корзину" height="18px"></a></div>
+                    </div>
+                    <span class="product-availability">В наличии</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-menu">© 2025 Фонвайб
+            <div><a class="footer-link" href="./about.html">О компании</a>
+                <span id="contact">Связаться: </span><span id="phone-number">8-800-37-07-899</span>
+            </div>
+            <a class="footer-link" id="btn-up" href="#">Наверх</a>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+</body>
+
+</html>
